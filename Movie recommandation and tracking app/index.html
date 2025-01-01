@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Movie Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Movie Watchlist</h1>
+        
+        <!-- Add movie form -->
+        <div class="input-form">
+            <input type="text" id="movie-input" placeholder="Movie title">
+            <input type="text" id="genre-input" placeholder="Genre">
+            <input type="number" id="year-input" placeholder="Year">
+            
+            <!-- Watchlist selection -->
+            <select id="watchlist-input">
+                <option value="to-watch">To Watch</option>
+                <option value="watched">Watched</option>
+                <option value="favorites">Favorites</option>
+            </select>
+            
+            <button id="add-button">Add Movie</button>
+        </div>
+
+        <h2>Your Watchlist</h2>
+        
+        <!-- Watchlist filters -->
+        <div class="filters">
+            <button id="filter-all">All</button>
+            <button id="filter-to-watch">To Watch</button>
+            <button id="filter-watched">Watched</button>
+            <button id="filter-favorites">Favorites</button>
+        </div>
+
+        <ul id="movie-list"></ul>
+        <h3>Movies Watched: <span id="watched-count">0</span></h3>
+
+        <!-- Movie recommendations section -->
+        <h3>Movie Recommendations</h3>
+        <ul id="recommendations-list"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
